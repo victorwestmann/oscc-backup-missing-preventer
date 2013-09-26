@@ -8,8 +8,8 @@ Types of files
 --------------
 For now the aim of this project is to backup:
 
-- **.mdb** __(MS-Office® Access databases)__ ,
-- **.wav** __(audio lossless)__ files.
+- **.mdb** _(MS-Office® Access databases)_ ,
+- **.wav** _(audio lossless)_ files.
 
 In future releases we'll try to add more files (like **diags** and other important log files).
 
