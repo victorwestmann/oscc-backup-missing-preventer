@@ -1,0 +1,36 @@
+﻿<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+    <PropertyGroup>
+        <ProjectGuid>{F054268D-C316-4FF3-B604-8E0FC5F64EE0}</ProjectGuid>
+    </PropertyGroup>
+    <ItemGroup>
+        <Projects Include="osccBMP.dproj">
+            <Dependencies/>
+        </Projects>
+    </ItemGroup>
+    <ProjectExtensions>
+        <Borland.Personality>Default.Personality.12</Borland.Personality>
+        <Borland.ProjectType/>
+        <BorlandProject>
+            <Default.Personality/>
+        </BorlandProject>
+    </ProjectExtensions>
+    <Target Name="osccBMP">
+        <MSBuild Projects="osccBMP.dproj"/>
+    </Target>
+    <Target Name="osccBMP:Clean">
+        <MSBuild Projects="osccBMP.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="osccBMP:Make">
+        <MSBuild Projects="osccBMP.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="Build">
+        <CallTarget Targets="osccBMP"/>
+    </Target>
+    <Target Name="Clean">
+        <CallTarget Targets="osccBMP:Clean"/>
+    </Target>
+    <Target Name="Make">
+        <CallTarget Targets="osccBMP:Make"/>
+    </Target>
+    <Import Project="$(BDS)\Bin\CodeGear.Group.Targets" Condition="Exists('$(BDS)\Bin\CodeGear.Group.Targets')"/>
+</Project>
