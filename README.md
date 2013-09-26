@@ -19,7 +19,9 @@ This program was written using **Pascal** programming language and Embarcadero®
 
 Does this project use any 3rd party component?
 ----------------------------------------------
-Yes. We use the opensource MasterZip (also named __DelphiZip www.delphizip__ ) component __(for Delphi XE4 as cited above)__.
+Yes. We use the opensource:
+
+- **DelphiZip / MasterZip** ( _www.delphizip.org_ ) component _(for Delphi XE4 as cited above)_.
 
 License
 -------
