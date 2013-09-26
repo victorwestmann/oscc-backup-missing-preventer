@@ -2,16 +2,16 @@ OSCC Backup Missing Preventer
 =============================
 
 This program was written to backup important files from server's client machines before software update/upgrade.
+This software was developed to be used at servers containing the call-center software suite **OpenScape ContactCenter** application V7/+.
 
 Types of files
 --------------
-For now the aim of this project is to backup **.mdb** (Microsoft Office Access databases) and **.wav** (audio losslesss) files.
-In future releases we'll try to add more files (like **diags** and other important log files).
+For now the aim of this project is to backup:
 
-Software version
-----------------
-This program fits OpenScape ContactCenter V7/+ (and greater).
-This is a call-center software suite that belongs to **Siemens**.
+- **.mdb** __(MS-Office® Access databases)__ ,
+- **.wav** __(audio lossless)__ files.
+
+In future releases we'll try to add more files (like **diags** and other important log files).
 
 What programming language was this built in?
 --------------------------------------------
