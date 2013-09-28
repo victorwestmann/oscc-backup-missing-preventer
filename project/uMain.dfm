@@ -2,8 +2,8 @@ object frmPrincipal: TfrmPrincipal
   Left = 0
   Top = 0
   Caption = 'Backup Missing Preventer'
-  ClientHeight = 673
-  ClientWidth = 926
+  ClientHeight = 608
+  ClientWidth = 933
   Color = clBtnFace
   Font.Charset = DEFAULT_CHARSET
   Font.Color = clWindowText
@@ -13,11 +13,14 @@ object frmPrincipal: TfrmPrincipal
   OldCreateOrder = False
   Position = poScreenCenter
   OnCreate = FormCreate
+  DesignSize = (
+    933
+    608)
   PixelsPerInch = 120
   TextHeight = 17
   object Gauge1: TGauge
     Left = 30
-    Top = 557
+    Top = 461
     Width = 352
     Height = 67
     Margins.Left = 4
@@ -28,14 +31,16 @@ object frmPrincipal: TfrmPrincipal
     Progress = 0
   end
   object Image2: TImage
-    Left = 418
-    Top = 188
-    Width = 482
-    Height = 130
+    Left = 0
+    Top = -4
+    Width = 493
+    Height = 99
     Margins.Left = 4
     Margins.Top = 4
     Margins.Right = 4
     Margins.Bottom = 4
+    Anchors = [akLeft, akTop, akRight]
+    AutoSize = True
     Picture.Data = {
       0954506E67496D61676589504E470D0A1A0A0000000D49484452000001ED0000
       00630806000000B67958E70000000473424954080808087C0864880000000970
@@ -75,10 +80,10 @@ object frmPrincipal: TfrmPrincipal
       9E1FDF0000000049454E44AE426082}
   end
   object Image1: TImage
-    Left = 806
-    Top = 209
-    Width = 83
-    Height = 84
+    Left = 30
+    Top = 9
+    Width = 64
+    Height = 64
     Margins.Left = 4
     Margins.Top = 4
     Margins.Right = 4
@@ -336,17 +341,18 @@ object frmPrincipal: TfrmPrincipal
       4E44AE426082}
   end
   object lblAuthor: TLabel
-    Left = 738
-    Top = 607
+    Left = 746
+    Top = 551
     Width = 162
     Height = 17
+    Anchors = [akRight, akBottom]
     Caption = 'Made by Victor Westmann'
   end
   object FileListBox: TFileListBox
     Left = 418
-    Top = 340
-    Width = 212
-    Height = 284
+    Top = 398
+    Width = 356
+    Height = 130
     Margins.Left = 4
     Margins.Top = 4
     Margins.Right = 4
@@ -357,7 +363,7 @@ object frmPrincipal: TfrmPrincipal
   end
   object gpbDataBackup: TGroupBox
     Left = 37
-    Top = 178
+    Top = 255
     Width = 345
     Height = 78
     Caption = ' Data do Backup '
@@ -391,8 +397,8 @@ object frmPrincipal: TfrmPrincipal
     end
   end
   object btnCompactar: TButton
-    Left = 37
-    Top = 443
+    Left = 429
+    Top = 358
     Width = 345
     Height = 25
     Caption = 'Compactar em formato .zip...'
@@ -400,8 +406,8 @@ object frmPrincipal: TfrmPrincipal
     OnClick = btnCompactarClick
   end
   object rdgLocalBackup: TRadioGroup
-    Left = 37
-    Top = 340
+    Left = 429
+    Top = 255
     Width = 345
     Height = 89
     Caption = ' Local do Backup'
@@ -419,7 +425,7 @@ object frmPrincipal: TfrmPrincipal
   end
   object btnProcurarMDB: TButton
     Left = 37
-    Top = 281
+    Top = 358
     Width = 345
     Height = 25
     Caption = 'Procurar arquivos automaticamente...'
@@ -428,8 +434,8 @@ object frmPrincipal: TfrmPrincipal
   end
   object stbBarraDeStatus: TStatusBar
     Left = 0
-    Top = 654
-    Width = 926
+    Top = 589
+    Width = 933
     Height = 19
     Panels = <
       item
@@ -438,7 +444,7 @@ object frmPrincipal: TfrmPrincipal
   end
   object pgbStatus: TProgressBar
     Left = 37
-    Top = 494
+    Top = 398
     Width = 345
     Height = 21
     Position = 45
@@ -446,7 +452,7 @@ object frmPrincipal: TfrmPrincipal
   end
   object rdgTipoBackup: TRadioGroup
     Left = 37
-    Top = 29
+    Top = 125
     Width = 345
     Height = 116
     Margins.Left = 4
@@ -461,8 +467,8 @@ object frmPrincipal: TfrmPrincipal
   end
   object SaveDialog: TSaveDialog
     DefaultExt = '*.zip'
-    Left = 472
-    Top = 24
+    Left = 632
+    Top = 136
   end
   object ZipMaster: TZipMaster
     AddOptions = []
@@ -484,7 +490,7 @@ object frmPrincipal: TfrmPrincipal
     Verbose = False
     Version = '1.9.1.0019'
     WriteOptions = []
-    Left = 416
-    Top = 24
+    Left = 552
+    Top = 136
   end
 end

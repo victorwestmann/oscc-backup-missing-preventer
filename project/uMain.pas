@@ -1,5 +1,25 @@
 unit uMain;
 
+{===============================================================================
+Program created by
+
+\   \ /   /|__| _____/  |_  ___________
+ \   Y   / |  |/ ___\   __\/  _ \_  __ \
+  \     /  |  \  \___|  | (  <_> )  | \/
+   \___/   |__|\___  >__|  \____/|__|
+                   \/
+Date: 2013-08-04
+Purpose: Find .wav and .mdb files and back them up to avoid unpleasant surprises
+after a patch application on client server's machine
+
+
+  (When installed) is generally found at:
+  C:\Program Files (x86)\Siemens\HiPath Procenter\Wave
+  and
+  C:\Program Files (x86)\Siemens\HiPath Procenter\AdministrationData
+===============================================================================}
+
+
 interface
 
 uses
