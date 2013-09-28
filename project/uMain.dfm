@@ -2,7 +2,7 @@ object frmPrincipal: TfrmPrincipal
   Left = 0
   Top = 0
   Caption = 'Backup Missing Preventer'
-  ClientHeight = 554
+  ClientHeight = 542
   ClientWidth = 817
   Color = clBtnFace
   Font.Charset = DEFAULT_CHARSET
@@ -15,7 +15,7 @@ object frmPrincipal: TfrmPrincipal
   OnCreate = FormCreate
   DesignSize = (
     817
-    554)
+    542)
   PixelsPerInch = 120
   TextHeight = 17
   object Image2: TImage
@@ -330,7 +330,7 @@ object frmPrincipal: TfrmPrincipal
   end
   object lblAuthor: TLabel
     Left = 630
-    Top = 497
+    Top = 485
     Width = 162
     Height = 17
     Anchors = [akRight, akBottom]
@@ -424,7 +424,7 @@ object frmPrincipal: TfrmPrincipal
   end
   object stbBarraDeStatus: TStatusBar
     Left = 0
-    Top = 535
+    Top = 523
     Width = 817
     Height = 19
     Panels = <
@@ -436,12 +436,12 @@ object frmPrincipal: TfrmPrincipal
   end
   object pgbStatus: TProgressBar
     Left = 37
-    Top = 470
+    Top = 458
     Width = 755
     Height = 21
     Anchors = [akLeft, akRight, akBottom]
-    Position = 45
     TabOrder = 6
+    ExplicitTop = 470
     ExplicitWidth = 737
   end
   object rdgTipoBackup: TRadioGroup
