@@ -40,7 +40,6 @@ type
     stbBarraDeStatus: TStatusBar;
     SaveDialog: TSaveDialog;
     ZipMaster: TZipMaster;
-    Gauge1: TGauge;
     pgbStatus: TProgressBar;
     rdgTipoBackup: TRadioGroup;
     Image1: TImage;
@@ -123,7 +122,7 @@ begin
     end;
 
   ZipMaster.ZipFileName := ZipArquivo;
-  Gauge1.MaxValue := FileListBox.Count;
+
   pgbStatus.Max := FileListBox.Count;
   for i := 0 to (FileListBox.Count -1) do
     begin
@@ -138,7 +137,7 @@ begin
           ZipMaster.FSpecArgs.Add(NomeArq); //se o arquivo for da mesma data de hoje, nessa linha eu adiciono ele ao zip
           ZipMaster.Add;
         end;
-      Gauge1.Progress := Gauge1.Progress +1;
+
       pgbStatus.StepIt;
       pgbStatus.StepBy(1);
     end;

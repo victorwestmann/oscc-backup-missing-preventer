@@ -2,8 +2,8 @@ object frmPrincipal: TfrmPrincipal
   Left = 0
   Top = 0
   Caption = 'Backup Missing Preventer'
-  ClientHeight = 608
-  ClientWidth = 933
+  ClientHeight = 554
+  ClientWidth = 817
   Color = clBtnFace
   Font.Charset = DEFAULT_CHARSET
   Font.Color = clWindowText
@@ -14,22 +14,10 @@ object frmPrincipal: TfrmPrincipal
   Position = poScreenCenter
   OnCreate = FormCreate
   DesignSize = (
-    933
-    608)
+    817
+    554)
   PixelsPerInch = 120
   TextHeight = 17
-  object Gauge1: TGauge
-    Left = 30
-    Top = 461
-    Width = 352
-    Height = 67
-    Margins.Left = 4
-    Margins.Top = 4
-    Margins.Right = 4
-    Margins.Bottom = 4
-    Kind = gkVerticalBar
-    Progress = 0
-  end
   object Image2: TImage
     Left = 0
     Top = -4
@@ -341,18 +329,20 @@ object frmPrincipal: TfrmPrincipal
       4E44AE426082}
   end
   object lblAuthor: TLabel
-    Left = 746
-    Top = 551
+    Left = 630
+    Top = 497
     Width = 162
     Height = 17
     Anchors = [akRight, akBottom]
     Caption = 'Made by Victor Westmann'
+    ExplicitLeft = 746
+    ExplicitTop = 551
   end
   object FileListBox: TFileListBox
-    Left = 418
-    Top = 398
+    Left = 429
+    Top = 136
     Width = 356
-    Height = 130
+    Height = 97
     Margins.Left = 4
     Margins.Top = 4
     Margins.Right = 4
@@ -434,21 +424,25 @@ object frmPrincipal: TfrmPrincipal
   end
   object stbBarraDeStatus: TStatusBar
     Left = 0
-    Top = 589
-    Width = 933
+    Top = 535
+    Width = 817
     Height = 19
     Panels = <
       item
         Width = 650
       end>
+    ExplicitTop = 589
+    ExplicitWidth = 933
   end
   object pgbStatus: TProgressBar
     Left = 37
-    Top = 398
-    Width = 345
+    Top = 470
+    Width = 755
     Height = 21
+    Anchors = [akLeft, akRight, akBottom]
     Position = 45
     TabOrder = 6
+    ExplicitWidth = 737
   end
   object rdgTipoBackup: TRadioGroup
     Left = 37
@@ -467,8 +461,8 @@ object frmPrincipal: TfrmPrincipal
   end
   object SaveDialog: TSaveDialog
     DefaultExt = '*.zip'
-    Left = 632
-    Top = 136
+    Left = 576
+    Top = 400
   end
   object ZipMaster: TZipMaster
     AddOptions = []
@@ -490,7 +484,7 @@ object frmPrincipal: TfrmPrincipal
     Verbose = False
     Version = '1.9.1.0019'
     WriteOptions = []
-    Left = 552
-    Top = 136
+    Left = 496
+    Top = 400
   end
 end
