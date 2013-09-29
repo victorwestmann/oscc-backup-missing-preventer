@@ -15,7 +15,7 @@
    id="svg4312"
    version="1.1"
    inkscape:version="0.48.4 r9939"
-   sodipodi:docname="splash.svg"
+   sodipodi:docname="splash-big.svg"
    inkscape:export-filename="C:\Users\Victor Westmann\Documents\RAD Studio\Projects\_imgs\imgs\splash1.png"
    inkscape:export-xdpi="90"
    inkscape:export-ydpi="90"
@@ -262,10 +262,10 @@
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
      inkscape:zoom="1.5326322"
-     inkscape:cx="310.53668"
-     inkscape:cy="194.31343"
+     inkscape:cx="359.56816"
+     inkscape:cy="168.21454"
      inkscape:document-units="px"
-     inkscape:current-layer="g3172"
+     inkscape:current-layer="layer1"
      showgrid="false"
      inkscape:window-width="1538"
      inkscape:window-height="878"
@@ -307,15 +307,9 @@
        inkscape:export-ydpi="90" />
   </g>
   <g
-     style="opacity:0.8;display:inline"
-     transform="translate(-92.452763,-355.43926)"
-     id="g3172"
-     inkscape:groupmode="layer"
-     inkscape:label="img fechamento" />
-  <g
      inkscape:groupmode="layer"
      id="layer2"
-     inkscape:label="img entrada"
+     inkscape:label="main image"
      style="opacity:0.9;display:inline"
      transform="translate(64.640991,28.841991)">
     <rect
@@ -436,7 +430,7 @@
          id="tspan3157">e/ou em outros países. Outras marcas são de propriedade de seus respectivos donos.</tspan></text>
   </g>
   <g
-     style="display:none"
+     style="display:inline"
      transform="translate(-92.452763,-355.43926)"
      id="g3447"
      inkscape:groupmode="layer"
@@ -513,7 +507,7 @@
      inkscape:groupmode="layer"
      id="g3109"
      transform="translate(-92.452763,-355.43926)"
-     style="display:none">
+     style="display:inline">
     <text
        xml:space="preserve"
        style="font-size:174.1862793px;font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;text-align:center;line-height:100%;writing-mode:lr-tb;text-anchor:middle;fill:none;stroke:#ffffff;stroke-width:2.38702464;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;display:inline;font-family:Calibri;-inkscape-font-specification:Calibri Bold"
@@ -530,19 +524,37 @@
   <g
      inkscape:groupmode="layer"
      id="layer5"
-     inkscape:label="frame"
+     inkscape:label="frame big"
      style="display:inline"
      transform="translate(64.640991,28.841991)">
     <rect
        inkscape:export-ydpi="90"
        inkscape:export-xdpi="90"
        inkscape:export-filename="C:\Users\Victor Westmann\Documents\RAD Studio\Projects\_imgs\imgs\splash3.png"
-       style="opacity:0.8;fill:none;stroke:#000000;stroke-width:1.88441837;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+       style="opacity:0.8;fill:none;stroke:#000000;stroke-width:2;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
        id="rect3163"
        width="632.06671"
        height="344.50031"
        x="-568.3924"
        y="-27.923626"
+       ry="0"
+       transform="scale(-1,1)" />
+  </g>
+  <g
+     inkscape:groupmode="layer"
+     id="layer1"
+     inkscape:label="frame"
+     style="display:none">
+    <rect
+       inkscape:export-ydpi="90"
+       inkscape:export-xdpi="90"
+       inkscape:export-filename="C:\Users\Victor Westmann\Documents\RAD Studio\Projects\_imgs\imgs\splash3.png"
+       style="opacity:0.8;fill:none;stroke:#000000;stroke-width:2;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate"
+       id="rect3163-1"
+       width="502.55878"
+       height="274.53162"
+       x="-503.52545"
+       y="0.91836613"
        ry="0"
        transform="scale(-1,1)" />
   </g>
