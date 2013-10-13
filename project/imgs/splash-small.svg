@@ -231,32 +231,6 @@
          stdDeviation="12.207104"
          id="feGaussianBlur3949" />
     </filter>
-    <filter
-       inkscape:collect="always"
-       id="filter3862"
-       x="-0.032803029"
-       width="1.0656061"
-       y="-0.35108107"
-       height="1.7021621"
-       color-interpolation-filters="sRGB">
-      <feGaussianBlur
-         inkscape:collect="always"
-         stdDeviation="3.9610557"
-         id="feGaussianBlur3864" />
-    </filter>
-    <filter
-       inkscape:collect="always"
-       id="filter3874"
-       x="-0.068228498"
-       width="1.136457"
-       y="-0.49750382"
-       height="1.9950078"
-       color-interpolation-filters="sRGB">
-      <feGaussianBlur
-         inkscape:collect="always"
-         stdDeviation="8.1636094"
-         id="feGaussianBlur3876" />
-    </filter>
     <clipPath
        clipPathUnits="userSpaceOnUse"
        id="clipPath3093-7">
@@ -308,10 +282,10 @@
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
      inkscape:zoom="1.5326322"
-     inkscape:cx="322.30567"
+     inkscape:cx="247.27136"
      inkscape:cy="98.32749"
      inkscape:document-units="px"
-     inkscape:current-layer="layer5"
+     inkscape:current-layer="layer2"
      showgrid="false"
      inkscape:window-width="1538"
      inkscape:window-height="878"
@@ -330,7 +304,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
+        <dc:title />
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -357,11 +331,11 @@
      inkscape:groupmode="layer"
      id="layer2"
      inkscape:label="main image"
-     style="opacity:0.9;display:inline"
+     style="opacity:1;display:inline"
      transform="translate(64.674319,28.92362)">
     <image
        transform="matrix(0.79583395,0,0,0.79844656,-13.230824,-5.894835)"
-       style="opacity:0.9;display:inline;enable-background:new"
+       style="opacity:0.90000000000000002;display:inline;enable-background:new"
        y="-143.28436"
        x="-70.192001"
        id="image3548"

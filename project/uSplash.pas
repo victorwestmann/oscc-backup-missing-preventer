@@ -8,7 +8,7 @@ uses
    
 
 type
-  TSplashBKP = class(TForm)
+  TfrmSplash = class(TForm)
     imgSpash: TImage;
   private
     { Private declarations }
@@ -17,7 +17,7 @@ type
   end;
 
 var
-  SplashBKP: TSplashBKP;
+  Splash: TSplash;
 
 implementation
 

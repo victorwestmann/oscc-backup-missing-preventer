@@ -2,31 +2,27 @@ object frmPrincipal: TfrmPrincipal
   Left = 0
   Top = 0
   Caption = 'Backup Missing Preventer'
-  ClientHeight = 542
-  ClientWidth = 817
+  ClientHeight = 414
+  ClientWidth = 625
   Color = clBtnFace
   Font.Charset = DEFAULT_CHARSET
   Font.Color = clWindowText
-  Font.Height = -14
+  Font.Height = -11
   Font.Name = 'Tahoma'
   Font.Style = []
   OldCreateOrder = False
   Position = poScreenCenter
   OnCreate = FormCreate
   DesignSize = (
-    817
-    542)
-  PixelsPerInch = 120
-  TextHeight = 17
+    625
+    414)
+  PixelsPerInch = 96
+  TextHeight = 13
   object Image2: TImage
     Left = 0
-    Top = -4
+    Top = -3
     Width = 493
     Height = 99
-    Margins.Left = 4
-    Margins.Top = 4
-    Margins.Right = 4
-    Margins.Bottom = 4
     Anchors = [akLeft, akTop, akRight]
     AutoSize = True
     Picture.Data = {
@@ -68,14 +64,10 @@ object frmPrincipal: TfrmPrincipal
       9E1FDF0000000049454E44AE426082}
   end
   object Image1: TImage
-    Left = 30
-    Top = 9
-    Width = 64
-    Height = 64
-    Margins.Left = 4
-    Margins.Top = 4
-    Margins.Right = 4
-    Margins.Bottom = 4
+    Left = 23
+    Top = 7
+    Width = 66
+    Height = 66
     Picture.Data = {
       0954506E67496D61676589504E470D0A1A0A0000000D49484452000000400000
       00400806000000AA6971DE0000001974455874536F6674776172650041646F62
@@ -327,59 +319,70 @@ object frmPrincipal: TfrmPrincipal
       D8ED8EB6ECBB1D41EA184895DE17F59792A28F848281235EAFE728417ECE65B4
       972CF42D6A930302BAF6E5C628CEB501FE1F5D888122508423C7000000004945
       4E44AE426082}
+    OnClick = Image1Click
   end
   object lblAuthor: TLabel
-    Left = 630
-    Top = 485
-    Width = 162
-    Height = 17
+    Left = 482
+    Top = 371
+    Width = 125
+    Height = 13
+    Margins.Left = 2
+    Margins.Top = 2
+    Margins.Right = 2
+    Margins.Bottom = 2
     Anchors = [akRight, akBottom]
     Caption = 'Made by Victor Westmann'
-    ExplicitLeft = 746
-    ExplicitTop = 551
   end
   object FileListBox: TFileListBox
-    Left = 429
-    Top = 136
-    Width = 356
-    Height = 97
-    Margins.Left = 4
-    Margins.Top = 4
-    Margins.Right = 4
-    Margins.Bottom = 4
-    ItemHeight = 17
+    Left = 328
+    Top = 104
+    Width = 272
+    Height = 74
+    ItemHeight = 13
     TabOrder = 0
     Visible = False
   end
   object gpbDataBackup: TGroupBox
-    Left = 37
-    Top = 255
-    Width = 345
-    Height = 78
+    Left = 28
+    Top = 195
+    Width = 264
+    Height = 60
+    Margins.Left = 2
+    Margins.Top = 2
+    Margins.Right = 2
+    Margins.Bottom = 2
     Caption = ' Data do Backup '
     Font.Charset = DEFAULT_CHARSET
     Font.Color = clWindowText
-    Font.Height = -15
+    Font.Height = -11
     Font.Name = 'Tahoma'
     Font.Style = []
     ParentFont = False
     TabOrder = 1
     DesignSize = (
-      345
-      78)
+      264
+      60)
     object lblHoje: TLabel
-      Left = 24
-      Top = 39
-      Width = 136
-      Height = 18
+      Left = 18
+      Top = 30
+      Width = 100
+      Height = 13
+      Margins.Left = 2
+      Margins.Top = 2
+      Margins.Right = 2
+      Margins.Bottom = 2
       Anchors = []
       Caption = 'Fazer backup do dia:'
     end
     object dtpHoje: TDateTimePicker
-      Left = 178
-      Top = 34
-      Width = 137
-      Height = 26
+      Left = 136
+      Top = 26
+      Width = 105
+      Height = 21
+      Margins.Left = 2
+      Margins.Top = 2
+      Margins.Right = 2
+      Margins.Bottom = 2
       Anchors = []
       Date = 41517.583443078710000000
       Time = 41517.583443078710000000
@@ -387,23 +390,31 @@ object frmPrincipal: TfrmPrincipal
     end
   end
   object btnCompactar: TButton
-    Left = 429
-    Top = 358
-    Width = 345
-    Height = 25
+    Left = 328
+    Top = 274
+    Width = 264
+    Height = 19
+    Margins.Left = 2
+    Margins.Top = 2
+    Margins.Right = 2
+    Margins.Bottom = 2
     Caption = 'Compactar em formato .zip...'
     TabOrder = 2
     OnClick = btnCompactarClick
   end
   object rdgLocalBackup: TRadioGroup
-    Left = 429
-    Top = 255
-    Width = 345
-    Height = 89
+    Left = 328
+    Top = 195
+    Width = 264
+    Height = 68
+    Margins.Left = 2
+    Margins.Top = 2
+    Margins.Right = 2
+    Margins.Bottom = 2
     Caption = ' Local do Backup'
     Font.Charset = DEFAULT_CHARSET
     Font.Color = clWindowText
-    Font.Height = -15
+    Font.Height = -11
     Font.Name = 'Tahoma'
     Font.Style = []
     ItemIndex = 0
@@ -414,45 +425,49 @@ object frmPrincipal: TfrmPrincipal
     TabOrder = 3
   end
   object btnProcurarMDB: TButton
-    Left = 37
-    Top = 358
-    Width = 345
-    Height = 25
+    Left = 28
+    Top = 274
+    Width = 264
+    Height = 19
+    Margins.Left = 2
+    Margins.Top = 2
+    Margins.Right = 2
+    Margins.Bottom = 2
     Caption = 'Procurar arquivos automaticamente...'
     TabOrder = 4
     OnClick = btnProcurarMDBClick
   end
   object stbBarraDeStatus: TStatusBar
     Left = 0
-    Top = 523
-    Width = 817
+    Top = 395
+    Width = 625
     Height = 19
+    Margins.Left = 2
+    Margins.Top = 2
+    Margins.Right = 2
+    Margins.Bottom = 2
     Panels = <
       item
         Width = 650
       end>
-    ExplicitTop = 589
-    ExplicitWidth = 933
   end
   object pgbStatus: TProgressBar
-    Left = 37
-    Top = 458
-    Width = 755
-    Height = 21
+    Left = 28
+    Top = 350
+    Width = 578
+    Height = 16
+    Margins.Left = 2
+    Margins.Top = 2
+    Margins.Right = 2
+    Margins.Bottom = 2
     Anchors = [akLeft, akRight, akBottom]
     TabOrder = 6
-    ExplicitTop = 470
-    ExplicitWidth = 737
   end
   object rdgTipoBackup: TRadioGroup
-    Left = 37
-    Top = 125
-    Width = 345
-    Height = 116
-    Margins.Left = 4
-    Margins.Top = 4
-    Margins.Right = 4
-    Margins.Bottom = 4
+    Left = 28
+    Top = 96
+    Width = 264
+    Height = 88
     Caption = 'Fazer backup de...'
     Items.Strings = (
       'Base de dados (.mdb)'
@@ -461,8 +476,8 @@ object frmPrincipal: TfrmPrincipal
   end
   object SaveDialog: TSaveDialog
     DefaultExt = '*.zip'
-    Left = 576
-    Top = 400
+    Left = 240
+    Top = 312
   end
   object ZipMaster: TZipMaster
     AddOptions = []
@@ -484,7 +499,7 @@ object frmPrincipal: TfrmPrincipal
     Verbose = False
     Version = '1.9.1.0019'
     WriteOptions = []
-    Left = 496
-    Top = 400
+    Left = 184
+    Top = 312
   end
 end

@@ -25,8 +25,8 @@ interface
 uses
   Winapi.Windows, Winapi.Messages, System.SysUtils, System.Variants, System.Classes, Vcl.Graphics,
   Vcl.Controls, Vcl.Forms, Vcl.Dialogs, Vcl.StdCtrls, Vcl.FileCtrl, Vcl.Consts,
-  Vcl.ComCtrls, Vcl.ExtCtrls, Vcl.Samples.Gauges, Vcl.ImgList, Vcl.Menus,
-  ZipMstr, Vcl.Imaging.pngimage;
+  Vcl.ComCtrls, Vcl.ExtCtrls, Vcl.Samples.Gauges, Vcl.ImgList, Vcl.Menus, Vcl.Imaging.pngimage,
+  ZipMstr;
 
 type
   TfrmPrincipal = class(TForm)
@@ -48,6 +48,7 @@ type
     procedure FormCreate(Sender: TObject);
     procedure btnProcurarMDBClick(Sender: TObject);
     procedure btnCompactarClick(Sender: TObject);
+    procedure Image1Click(Sender: TObject);
 
 
   private
@@ -64,8 +65,8 @@ Const
  Dir4 = 'D:\Program Files\Siemens';
 
 var
-  frmPrincipal   : TfrmPrincipal;
-  FileFound : Boolean;
+  frmPrincipal    : TfrmPrincipal;
+  FileFound       : Boolean;
 
 implementation
 
@@ -161,7 +162,12 @@ begin
   SHGetSpecialFolderLocation(0, CSIDL_DESKTOP, DesktopPidl);
   SHGetPathFromIDList(DesktopPidl, DesktopPath);
   Result := IncludeTrailingPathDelimiter(DesktopPath);
-end; (*GetDesktopPath*)
+end; procedure TfrmPrincipal.Image1Click(Sender: TObject);
+begin
+
+end;
+
+(*GetDesktopPath*)
 
 procedure TfrmPrincipal.ProcuraArquivo(dir : string);
 var
